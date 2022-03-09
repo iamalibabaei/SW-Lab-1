@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <link rel="stylesheet" href="{% static 'sw1/css/normalize.css' %}" />
+        <link rel="stylesheet" href="{% static 'sw1/css/main.css' %}" />
+
+        <source src="{% static 'sw1/js/jquery.js' %}" />
+    </head>
+    <body>
+        <ol>
+            {% for book in books %}
+            <li>نام: {{ book.title }}، نویسنده: {{ book.author }}، انتشارات: {{ book.publication }}</li>
+            {% endfor %}
+        </ol>
+
+        <script src="{% static 'sw1/js/list.js' %}"></script>
+    </body>
+</html>
