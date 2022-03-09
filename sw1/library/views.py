@@ -13,6 +13,5 @@ def create_book(request):
         book_form = BookForm(request.POST)
         if book_form.is_valid():
             book_form.save()
-    # TODO implement front
-    return render(request, 'sw1/book_creation.html')
 
+    return render(request, 'sw1/book_creation.html')
