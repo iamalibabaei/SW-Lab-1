@@ -16,7 +16,8 @@ def create_book(request):
             book_form.save()
 
     return render(request, 'sw1/book_creation.html')
+
+
 def list_book(request):
     books = Book.objects.all()
-    # TODO implement lists show
-    return render(request, 'sw1/list.html')
+    return render(request, 'sw1/list.html', {"books": books})
