@@ -1,5 +1,7 @@
 # Virtual Evn
-sw1/venv
+venv
+venv/
+venv/*
 
 # Database
 sw1/db.sqlite3
@@ -11,6 +13,7 @@ sw1/db.sqlite3
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea
 # Generated files
 .idea/**/contentModel.xml
 
