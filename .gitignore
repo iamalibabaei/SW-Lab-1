@@ -1,0 +1,22 @@
+# Virtual Evn
+sw1/venv
+
+# Database
+sw1/db.sqlite3
+
+# If you are using PyCharm #
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+# Generated files
+.idea/**/contentModel.xml
+
+# Environments
+.env
+.venv
+env/
+ENV/
+env.bak/
