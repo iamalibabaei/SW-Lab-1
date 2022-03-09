@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'sw1/css/normalize.css' %}" />
+        <link rel="stylesheet" href="{% static 'sw1/css/main.css' %}" />
+
+        <source src="{% static 'sw1/js/jquery.js' %}" />
+    </head>
+    <body>
+        <form id="create-book" action="" method="post">
+            {% csrf_token %}
+            <input name="title" placeholder="نام" />
+            <input name="author" placeholder="نویسنده" />
+            <input name="publication" placeholder="انتشارات" />
+
+            <button type="submit">ثبت</button>
+        </form>
+    </body>
+</html>
